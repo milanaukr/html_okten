@@ -3,8 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .item{
+            width: 200px;
+            height: 200px;
+            background: #833AB4;
+            margin: 5px;
+            background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            box-shadow: 9px 5px 32px 24px rgba(231,0,255,0.75);
+            -webkit-box-shadow: 9px 5px 32px 24px rgba(231,0,255,0.75);
+            -moz-box-shadow: 9px 5px 32px 24px rgba(231,0,255,0.75);
+            border-radius: 20%;
+            border: 30px double deeppink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item a{
+            text-decoration: none;
+            color: lightpink;
+        }
+        .item:hover{
+            border-radius: 0;
+            border: 10px solid lightpink;
+            transition: 1s;
+            transform: scale(1.2);
+        }
+        .item:hover a{
+            color: mediumpurple;
+        }
+    </style>
 </head>
 <body>
-
+<div class="wrapper">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item">
+        <a href="https://www.google.com/">link</a>
+    </div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
 </body>
 </html>
