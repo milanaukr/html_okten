@@ -4,17 +4,58 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         body{
             height: 100vh;
         }
         .box{
-            width: 50%;
-            height: 50%;
+            width: 200px;
+            height: 200px;
+            /*margin: 10px;*/
+        }
+        .red{
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .red p{
+
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .flex{
+            height: 100%;
+            width: 100%;
             background-color: deeppink;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            flex-direction: column;
+        }
+        .red img{
+            width: 50%;
         }
     </style>
 </head>
 <body>
-<div class="box"></div>
+<div class="flex">
+    <div class="box red">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <img src="https://pluspng.com/img-png/flower-png-dahlia-flower-png-transparent-image-1644.png" alt="https://pluspng.com/img-png/flower-png-dahlia-flower-png-transparent-image-1644.png">
+    </div>
+    <div class="box yellow"></div>
+    <div class="box green"></div>
+</div>
+
 </body>
 </html>
