@@ -1,0 +1,8 @@
+.rectangle{
+    border: 12px solid #f5ffb5;
+    border-radius: 55px;
+    width: 315px;
+    height: 241px;
+    background: rgba(255, 0, 136, 0.85);
+    margin: 116px auto 0 auto;
+}
