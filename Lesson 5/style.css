@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+}
+.container{
+    width: 1340px;
+    margin: 0 auto;
+}
+nav{
+    padding-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 59px;
+}
+ul a{
+    color: #E9E3DC;
+    font-family: "Bowlby One", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96.896%;
+    text-transform: uppercase;
+}
+.nav__active-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 203px;
+    height: 60px;
+    background: #B3A0CD;
+    color: #1E1E1E;
+}
+
+/*--------h1----------*/
+.header-title{
+    width: 1255px;
+    color: #E9E3DC;
+    text-align: center;
+    font-family: "Bowlby One", sans-serif;
+    font-size: 107.088px;
+    font-weight: 400;
+    line-height: 88.896%;
+    letter-spacing: -2.142px;
+    text-transform: uppercase;
+    margin: 74px auto 33px auto;
+}
