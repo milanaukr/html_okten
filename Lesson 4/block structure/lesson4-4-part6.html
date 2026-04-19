@@ -3,8 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            width: 100%;
+            height: 20vh;
+            background: #8D8484;
+            color: #000;
+        }
+        main{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+        }
+        .aside-left{
+            width: 73vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .aside-left .content{
+            width: 100%;
+            height: 20vh;
+        }
+        .aside-left .content--1{
+            background: #776969;
+        }
+        .aside-left .content--2{
+            background: #643030;
+        }
+        .aside-left .content--3{
+            background: #441818;
+        }
+        .aside-right{
+            width: 27vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .aside-right .spam{
+            width: 100%;
+            height: 30vh;
+        }
+        .aside-right .spam--1{
+            background: #937575;
+        }
+        .aside-right .spam--2{
+            background: #644C4C;
+        }
+        footer{
+            width: 100%;
+            height: 20vh;
+            background: #BDBDBD;
+            color: #000;
+        }
+        header, .content, .spam, footer{
+            font-family: 'Inter', sans-serif;
+            font-size: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
+<header>Header</header>
 
+<main>
+    <div class="aside-left">
+        <div class="content content--1">Content - 1</div>
+        <div class="content content--2">Content - 2</div>
+        <div class="content content--3">Content - 2</div>
+    </div>
+
+    <div class="aside-right">
+        <div class="spam spam--1">spam -1</div>
+        <div class="spam spam--2">spam -2</div>
+    </div>
+</main>
+
+<footer>footer</footer>
 </body>
 </html>
