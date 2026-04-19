@@ -3,8 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+        }
+        .red{
+            background-color: red;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .yellow{
+            background-color: yellow;
+            order: 1;
+        }
+        .green{
+            background-color: green;
+            order: -1;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .purple{
+            background-color: purple;
+        }
+
+    </style>
 </head>
 <body>
+<div class="flex">
+    <div class="card red"></div>
+    <div class="card orange"></div>
+    <div class="card yellow"></div>
+    <div class="card green"></div>
+    <div class="card blue"></div>
+    <div class="card purple"></div>
 
+</div>
 </body>
 </html>
