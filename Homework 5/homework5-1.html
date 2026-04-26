@@ -3,8 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border-top: 10px solid #15c4ff;
+            border-right: 10px solid #40ff15;
+            border-bottom: 10px solid #fffb15;
+            border-left: 10px solid #ff15ad;
+            animation: preloader 6s linear infinite alternate;
+        }
+
+        @keyframes preloader{
+            from{
+                transform: rotate(360deg);
+            }
+            to{
+                transform: rotate(-360deg) scale(1.5);
+            }
+        }
+
+    </style>
 </head>
 <body>
+
+<div class="circle"></div>
 
 </body>
 </html>
