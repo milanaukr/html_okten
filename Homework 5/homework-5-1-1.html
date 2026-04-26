@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .preloader{
+            /*display: flex;*/
+            /*justify-content: center;*/
+            /*align-items: flex-start;*/
+            /*flex-direction: column;*/
+            position: relative;
+
+        }
+        .road img{
+            height: 300px;
+        }
+        .car img{
+            height: 200px;
+        }
+        .car{
+            position: absolute;
+            bottom: 50px;
+            right: 100px;
+            animation: ride 2s ease-in-out infinite alternate;
+        }
+        @keyframes ride{
+            from{
+                transform: translate(0,0);
+            }
+            10%{
+                transform: translate(10px,10px);
+            }
+            10%{
+                transform: translate(20px,-10px);
+            }
+            10%{
+                transform: translate(30px,10px);
+            }
+            10%{
+                transform: translate(40px,-10px);
+            }
+            10%{
+                transform: translate(50px,10px);
+            }
+            10%{
+                transform: translate(60px,-10px);
+            }
+            10%{
+                transform: translate(70px,10px);
+            }
+            10%{
+                transform: translate(80px,-10px);
+            }
+            10%{
+                transform: translate(90px,10px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="preloader">
+    <div class="car">
+        <img src="img/car.png" alt="car">
+    </div>
+
+    <div class="road">
+        <img src="img/road.png" alt="car">
+    </div>
+
+</div>
+</body>
+</html>
