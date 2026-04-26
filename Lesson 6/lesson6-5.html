@@ -3,8 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+        form sup{
+            color: #ff1529;
+        }
+        input{
+            width: 150px;
+        }
+        textarea{
+            resize: none;
+            width: 140px;
+        }
+        .register-form{
+            border: 3px solid deeppink;
+            border-radius: 10px;
+            width: 30%;
+            padding: 25px;
+        }
+        input[type="text"]{
+            background-color: #ffa5c3;
+            border: 2px solid hotpink;
+            border-radius: 5px;
+            color: yellow;
+        }
+        input[type="text"]::placeholder{
+            color: white;
+        }
+        input:focus{
+            outline: 2px solid orange;
+        }
+    </style>
 </head>
 <body>
 
+<form class="register-form">
+    <label for="enter-name">Enter name</label>
+    <input type="text" name="name" id="enter-name" placeholder="e.g. John Doe" required> <sup>*</sup>
+
+    <label for="enter-email">Enter email</label>
+    <input type="email" name="email" id="enter-email" placeholder="e.g. john@gmail.com" required> <sup>*</sup>
+
+    <label for="password">Enter password</label>
+    <input type="password" name="email" id="password" placeholder="e.g. qwerty" required> <sup>*</sup>
+
+    <label for="enter-year">Enter year of birth</label>
+    <input type="number" name="year" id="enter-year" placeholder="e.g. 2001" required min="1950" max="2008">
+
+<!--    <input type="color">-->
+<!--    <input type="file">-->
+<!--    <input type="date">-->
+<!--    <input type="time">-->
+
+    <label>Select gender</label>
+    <label><input type="radio" name="gender" value="female">Female</label>
+    <label><input type="radio" name="gender" value="male">Male</label>
+
+    <label>Do you want to subscribe to emails?
+        <input type="checkbox" name="subscription" value="yes">
+    </label>
+
+    <label for="region">Select region</label>
+    <select id="region">
+        <option value="uk">UK</option>
+        <option value="us">USA</option>
+        <option value="aus">Australia</option>
+        <option value="eu">Europe</option>
+        <option value="asia">Asia</option>
+    </select>
+
+    <label for="phone">Select phone</label>
+    <select id="phone">
+        <optgroup label="Apple">
+            <option value="iPhone 11">iPhone 11</option>
+            <option value="iPhone 12">iPhone 12</option>
+            <option value="iPhone 13">iPhone 13</option>
+        </optgroup>
+
+        <optgroup label="Samsung">
+            <option value="Galaxy">Galaxy</option>
+            <option value="Ultra">Ultra</option>
+            <option value="6767">6767</option>
+        </optgroup>
+    </select>
+
+    <label for="comment"></label>
+    <textarea id="comment" rows="4" cols="30"></textarea>
+
+    <div>
+        <input type="submit" value="Submit form">
+        <input type="reset" value="Reset form">
+    </div>
+
+</form>
 </body>
 </html>
